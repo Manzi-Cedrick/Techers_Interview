@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.hero{
+    /* width:; */
+    height: 100vh;
+    background-image: url('https://media.edutopia.org/styles/responsive_2880px_16x9/s3/sites/default/files/masters/2022-01/istockphoto-1334050812-crop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-color: aqua; */
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:2em 15em;
+}
+ul{
+    list-style: none;
+    display: flex;
+    font-size: 1.2em;
+    color: white;
+    gap: 0 6em;
+}
+.JoinUs{
+    padding:2em 6em;
+    background: rgb(44, 188, 44);
+    border: none;
+    color: white;
+    /* font-size: 1.3em; */
+}
+.login{
+    padding:2em 6em;
+    background: transparent;
+    border: none;
+    color: white;
+}
+.masterclasses{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    place-items: center;
+    padding-top: 10em;
+}
+#for{
+    color: rgb(44, 188, 44);
+    font-size: 1.2em;
+}
+#text{
+    color: white;
+    font-size: 8em;
+    padding: 0 4em;
+    font-weight: bolder;
+    text-align: center;
+}
+#find{
+    color: white;
+    font-size: 1.5em;
+    padding: 2em;
+}
+.second-section{
+    
+    height: 100vh;
+    background: white;
+    padding: 5em 10em;
+}
+#practice{
+    color: rgb(44, 188, 44);
+    font-size: 1.2em
+}
+#approtable{
+    padding-top: 1em;
+    font-size:2.6em;
+    color: black;
+    font-weight: bold;
+}
+#problem-text{
+    padding-bottom: 2em;
+}
+.service1{
+    background: white;
+    width: 20vw;
+    height: 40vh;
+    border-radius: 12px;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    padding: 3em 4em;
+}
+#header-text{
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 2em 0 0 0;
+}
+#service-content{
+    font-size: 1.12em;
+    padding: 2em 0 0 0;
+}
+.Hold-staff{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 6em;
+}
+.service-second-bg{
+    background: rgb(44, 188, 44);
+    color: white;
+}
+.service1:hover{
+    background: rgb(44, 188, 44);
+    transition: 0.5s;
+    cursor: pointer;
+    color: white;
+}
