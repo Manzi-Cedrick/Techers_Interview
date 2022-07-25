@@ -1,16 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .hero{
     /* width:; */
     height: 100vh;
-    background-image: url('https://media.edutopia.org/styles/responsive_2880px_16x9/s3/sites/default/files/masters/2022-01/istockphoto-1334050812-crop.jpg');
+    /* background-image: rgba(0, 0, 0, 0.279), url('https://media.edutopia.org/styles/responsive_2880px_16x9/s3/sites/default/files/masters/2022-01/istockphoto-1334050812-crop.jpg'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url("https://media.edutopia.org/styles/responsive_2880px_16x9/s3/sites/default/files/masters/2022-01/istockphoto-1334050812-crop.jpg");
+
     /* background-color: aqua; */
 }
 header{
@@ -18,12 +23,23 @@ header{
     justify-content: space-between;
     padding:2em 15em;
 }
-ul{
+.links ul{
     list-style: none;
     display: flex;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: white;
     gap: 0 6em;
+    padding: 1em 0;
+}
+.logo{
+    padding:1em 0em;
+    font-weight: bolder;
+    color: white;
+}
+.links ul a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 .JoinUs{
     padding:2em 6em;
@@ -36,7 +52,7 @@ ul{
     padding:2em 6em;
     background: transparent;
     border: none;
-    color: white;
+    color: black;
 }
 .masterclasses{
     display: flex;
@@ -56,14 +72,14 @@ ul{
     font-weight: bolder;
     text-align: center;
 }
+
 #find{
     color: white;
     font-size: 1.5em;
     padding: 2em;
 }
-.second-section{
-    
-    height: 100vh;
+.section{
+    /* height: 100vh; */
     background: white;
     padding: 5em 10em;
 }
@@ -72,18 +88,22 @@ ul{
     font-size: 1.2em
 }
 #approtable{
-    padding-top: 1em;
+    /* padding-bottom: 2em; */
     font-size:2.6em;
     color: black;
     font-weight: bold;
+}
+.line1{
+  
+    transform: translateY(20px);
 }
 #problem-text{
     padding-bottom: 2em;
 }
 .service1{
     background: white;
-    width: 20vw;
-    height: 40vh;
+    min-width: 20vw;
+    min-height: 40vh;
     border-radius: 12px;
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
     display: flex;
@@ -100,8 +120,9 @@ ul{
     padding: 2em 0 0 0;
 }
 .Hold-staff{
-    display: flex;
-    justify-content:space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    gap: 2em;
     margin-top: 6em;
 }
 .service-second-bg{
@@ -113,4 +134,332 @@ ul{
     transition: 0.5s;
     cursor: pointer;
     color: white;
+}
+.section-3{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 8em ;
+
+}
+.section-4{
+    padding: 5em 10em;
+    background: white;
+}
+.section-image{
+    min-width: 40vw;
+    min-height: 50vh;
+    background: #000;
+    background-image: url('https://media.istockphoto.com/photos/small-school-girl-sitting-at-the-desk-in-classroom-looking-at-camera-picture-id1173363595?k=20&m=1173363595&s=612x612&w=0&h=7bQHknvgJYLBmOivL5_oxwvBfKuao0DBJB55OrZbhg8=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 20% 0 20%;
+    padding-right: 20px;
+}
+.section-content{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em 0;
+    /* background: red; */
+    /* width: 40vw; */
+}
+#Quality-info{
+    color: black;
+    font-weight: bold;
+    font-size: 2.1em;
+}
+.link-data{
+    padding: 2em;
+    width: 30%;
+    border-radius: 5%;
+    text-decoration: none;
+    color: white;
+    background:rgb(44, 188, 44) ;
+}
+.limit{
+    background: white;
+    height:70vh;
+    min-width: 20vw;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+.limit-image{
+    height: 55%;
+    background: #000;
+    width: 100%;
+    position:relative;
+}
+.limit-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.limit-inside-content{
+    position:absolute;
+    top:5%;
+    left:2%;
+}
+.limit-inside-content button{
+    padding:10px 15px;
+    background: red;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.limit-hold-icons{
+    display: flex;
+    position: absolute;
+    bottom:2%;
+    left:20%;
+    gap: 0 1em;
+    justify-content: center;
+}
+.limit-hold-icons i{
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+    background: white;
+    color: black;
+    border-radius: 50%;
+}
+.Hold-staff-2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    gap:  2em;
+    padding: 2em 0;
+}
+.limit-content-intern{
+    color: #96BB7C;
+    display: flex;
+    justify-content: space-between;
+}
+.limit-rate{
+    padding: 1em;
+    background:  #2D4059;
+    color: white;
+    display: flex;
+    gap: 0 1em;
+    border-radius: 25%;
+    justify-content: center;
+    place-items: center;
+}
+.limit-rate i{
+    color: #FFCE31;
+}
+
+.limited-content{
+    padding: 1em;
+}
+.limit-sales{
+    padding: 1em 0;
+    font-size: 1.1em;
+}
+.limit-sales i{
+    color: rgba(0, 0, 0, 0.293);
+    padding-right: 0.5em;
+}
+.limit-link{
+    padding: 2em 3em;
+    border: 2px solid #96BB7C;
+    border-radius: 10%;
+    background: white;
+    cursor: pointer;
+}
+.testimonials-hold{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    gap: 0 2em;
+}
+.testimonial{
+    width: 40vw;
+    /* background: blue; */
+    height: 70vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    padding: 1em 4em;
+}
+.testimonial-profile{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    margin: 3em 0;
+}
+.testimonial-profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.star-hold{
+    margin: 1em 0;
+    color: #FFCE31;
+}
+.team-overall{
+    min-width: 20vw;
+    min-height: 60vh;
+    border-radius: 2%;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+.team-profile{
+    height: 75%;
+}
+.team-profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius:2%;
+    border-top-right-radius:2%;
+}
+.team-content{
+    padding: 2em;
+    text-align: center;
+}
+.team-content h1{
+    font-size: 1.6em;
+}
+.team-icons i{
+    color: #96BB7C;
+    padding: 1em;
+}
+.team-icons i:hover{
+    background: rgb(241, 241, 241);
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    border-radius: 50%;
+}
+#team-hold{
+    padding: 5em 0;
+    gap: 0 4em;
+}
+#newsletter{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 4em 0;
+}
+.email{
+    display: flex;
+}
+.email input{
+    padding: 0 2em;
+    min-width: 30vw;
+    background: white;
+    border: none;
+    outline: 1px solid #96BB7C;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+.email button{
+    padding: 2em 4em;
+    background: #96BB7C;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+#footer{
+    background: #ededed52;
+    min-height: 50vh;
+    position: relative;
+}
+.footer-quicklinks{
+    display: flex;
+    justify-content:space-between;
+    padding-bottom: 4em ;
+}
+.footer-description1{
+    display: flex;
+    flex-direction: column;
+    gap: 4em 0;
+}
+.footer-description1 p{
+    font-weight: bold;
+}
+.footer-description1 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em 0;
+}
+.footer-description1 li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.533);
+    font-size: 14px;
+    transition: 0.5s ease-in-out;
+}
+.footer-description1 li i{
+    color: rgba(0, 0, 0, 0.533);
+    padding-right: 20px;
+}
+.footer-description1 li a:hover{
+    color: black;
+    transform: scale(2);
+}
+.latest-footer{
+    display: flex;
+    justify-content:space-between;
+    color: black;
+    font-weight: bolder;
+}
+.fa-vimeo-square{
+    display: none;
+}
+.join-second{
+    padding:2em 6em;
+    background: rgb(44, 188, 44);
+    border: none;
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content:space-between;
+        padding: 2em 2em;
+    }
+    .links,.login,.JoinUs{
+        display: none;
+    }
+    .section{
+        background: white;
+        padding: 5em 2em;
+    }
+    #text{
+        font-size: 2.5em;
+    }
+    .fa-vimeo-square{
+        display:flex;
+        font-size: 2.5em;
+    }
+    .section-image{
+        display:none;
+    }
+    .testimonial{
+        margin: auto;
+        padding: 0 0;
+    }
+    .team-overall{
+        width: 100%;
+    }
+    .footer-quicklinks{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .footer-description1 li a{
+        font-size: small;
+    }
+    .email input{
+        min-width: 50vw;
+    }
 }
