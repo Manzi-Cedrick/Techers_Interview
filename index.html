@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="../fontawesome-free-6.0.0-beta3-web/fontawesome-free-6.0.0-beta3-web/css/all.css">
     <link rel="stylesheet" href="../fontawesome-free-6.0.0-beta3-web/fontawesome-free-6.0.0-beta3-web/css/all.min.css">
     <script src="https://kit.fontawesome.com/954941076f.js" crossorigin="anonymous"></script>
-    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body>
@@ -23,9 +26,9 @@
             <div class="links">
                 <ul class="flex">
                     <li> <a href="#">Home</a> </li>
-                    <li> <a href="#">Product</a> </li>
-                    <li> <a href="#">Pricing</a> </li>
-                    <li> <a href="#">Contact</a> </li>
+                    <li> <a href="#product">Product</a> </li>
+                    <li> <a href="#pricing">Pricing</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
                 </ul>
             </div>
             <div>
@@ -42,7 +45,7 @@
         </div>
     </section>
     <!-- End of heroo section -->
-    <section class="section">
+    <section class="section" id="product">
         <div>
             <p id="practice">Practice Advice</p>
             <p id="approtable">Approtable packages </p>
@@ -286,11 +289,11 @@
                 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
                 reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or
                 non-characteristic words etc.</p>
-            <a href="#" class="link-data">Learn More <i class="fa-angle-right"></i> </a>
+            <a href="#" class="animate__animated animate__bounce link-data">Learn More <i class="fa-angle-right"></i> </a>
         </div>
     </section>
     <!-- End Section -->
-    <section class="section-4">
+    <section class="section animate__animated animate__fadeInLeft" id="pricing">
         <div>
             <p id="practice">Courses</p>
             <p id="approtable">Video In Action </p>
@@ -348,7 +351,7 @@
                             <span> <i class="fa fa-star"></i> 7.9</span>
                         </div>
                     </div>
-                    <h1>Our Popular Courses</h1>
+                    <h1>Our Elementary Courses</h1>
                     <p>We focus on ergonomics
                         and meeting you....</p>
                     <div class="limit-sales">
@@ -379,7 +382,7 @@
                             <span> <i class="fa fa-star"></i> 7.9</span>
                         </div>
                     </div>
-                    <h1>Our Popular Courses</h1>
+                    <h1>Our Focused Platform Courses</h1>
                     <p>We focus on ergonomics
                         and meeting you....</p>
                     <div class="limit-sales">
@@ -410,7 +413,7 @@
                             <span> <i class="fa fa-star"></i> 7.9</span>
                         </div>
                     </div>
-                    <h1>Our Popular Courses</h1>
+                    <h1>Our Favourite Courses</h1>
                     <p>We focus on ergonomics
                         and meeting you....</p>
                     <div class="limit-sales">
@@ -426,7 +429,7 @@
     </section>
     <!-- End of section -->
     <!-- Testimonials section -->
-    <section class="section" id="section-test">
+    <section class="section" id="contact">
         <div>
             <p id="practice">Testimonials</p>
             <p id="approtable">Our Expert Teachers </p>
@@ -456,9 +459,9 @@
                     <p>Designer</p>
                 </div>
             </div>
-            <div class="testimonial">
+            <div class="testimonial ">
                 <div class="testimonial-profile">
-                    <img src="https://i.pinimg.com/originals/24/b9/a9/24b9a97b62f6bd8a5b209266717f5539.jpg" alt="">
+                    <img src="https://media.istockphoto.com/photos/young-man-standing-confidently-picture-id973481352?k=20&m=973481352&s=612x612&w=0&h=QvBVfIQezrqk3jwtrItEghWF9sMD23saG3Gmj5buG44=" alt="">
                 </div>
                 <div>
                     <p>Slate helps you see how many more days 
@@ -474,8 +477,8 @@
                         <i class="fa fa-star "></i>
                         <i class="fa fa-star "></i>
                     </div>
-                    <span style="font-weight: bold;">Regina Miles</span>
-                    <p>Designer</p>
+                    <span style="font-weight: bold;">Mike Scott</span>
+                    <p>Software Developer</p>
                 </div>
             </div>
         </div>
@@ -607,6 +610,22 @@
             </div>
         </div>
     </footer>
+    <script>
+        const headers = document.querySelector('.navbar');
+        function ChangeHeader(){
+            if(window.scrollY > 100 ){
+            headers.style.backgroundColor = 'white'
+            headers.style.color = 'black'
+            headers.style.boxShadow = '0px 13px 19px rgba(0, 0, 0, 0.07);'
+            }else{
+            headers.style.backgroundColor = 'transparent'
+            headers.style.color = 'white'
+
+            }
+        }
+        window.addEventListener('scroll',ChangeHeader);
+    
+    </script>
 </body>
 
 </html>
