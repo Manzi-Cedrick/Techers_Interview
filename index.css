@@ -245,7 +245,7 @@ header{
 }
 .limit{
     background: white;
-    height:70vh;
+    min-height: 65vh;
     overflow: hidden;
     transition: 0.5s;
     min-width: 20vw;
