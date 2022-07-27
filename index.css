@@ -539,9 +539,6 @@ header{
     }
 }
 @media screen and (min-width: 768px){
-    body{
-        /* font-size: 0.8em; */
-    }
     header{
         padding: 2em 4em;
     }
